@@ -2,7 +2,7 @@ function [ L,U] = crout_LU( A )
 %UNTITLED4 Summary of this function goes here
 %   Detailed explanation goes here
 
-% shit kicker'
+
 
 L = zeros(n);
 U = eye(n);
