@@ -7,7 +7,7 @@ x=zeros(n,1);
 summation=0;
 for i=n:-1:1
     j=i+1;
-    if j>n;
+    if j>n
         x(i)=y(i)/U(i,i);
     else
         for j=1:i-1
