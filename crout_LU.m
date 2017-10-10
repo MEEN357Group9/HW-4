@@ -2,7 +2,7 @@ function [ L,U] = crout_LU( A )
 %UNTITLED4 Summary of this function goes here
 %   This creates the L and U matrix
 
-n=size(A);
+n=size(A);%check
 
 L = zeros(n);
 U = eye(n);
