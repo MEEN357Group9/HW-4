@@ -1,4 +1,5 @@
 %Preparing to sub into backward elim
+%I am showing how this works 
 clear ALL
 close ALL
 clc
