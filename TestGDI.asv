@@ -3,11 +3,17 @@ A=[2,-3,1;5,1,6;4,3,-5];
 y=randi(10,3);
 %code starts here
 [ L,U] = crout_LU( A );
-x=zeros(1);
 [n]=size(A);
 n=n(1);
+x=zeros(n);
+summatio
 for i=n:-1:1
-    TermsU(i)=(U(i
-    
-    
+    j=i+1;
+    if j>n;
+    else
+    TermsU(i)=(U(i,j)*x(j));
+    x(i)=(y(i)-sum(U(i,j)*x(j)))/U(i,i);
+    end
 end
+%code ends here.
+disp(x);
