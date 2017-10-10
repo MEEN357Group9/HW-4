@@ -1,6 +1,6 @@
 function [ L,U] = crout_LU( A )
 %UNTITLED4 Summary of this function goes here
-%   Detailed explanation goes here
+%   This creates the L and U matrix
 
 
 
