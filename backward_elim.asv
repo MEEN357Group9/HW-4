@@ -1,15 +1,28 @@
 function [ x ] = backward_elim( U,y )
-%Backwards sub3
+%Backwards substitution
+%The inputs of this function are:
+%   U-The U matrix inported from the forward elimination function.
+%   y-The y matrix is imported from the forward elimination function.
+%Outputs
+%   x-The x output is the value for the x values from the origional
+%   equations
+
+%Checks the size of the matrixs
 [n]=size(U);
 [N]=size(y);
+%Makes sure the U matrix is a square matrix
 if n(1)~=n(2);
     error('The U matrix is not a square matrix.')
+%Makes sure that the y matrix has enough columns
 elseif n(1)~=N(1)
     error('Matrix y does not have enought columns.')
 end
+%Makes sure there is no zero in the d
 for I=1:n
-    if U(n,n)==0
-        
+    if U(I,I)==0
+        error('There is a zero in the dagonial of the U matrix.')
+    end
+end
 n=n(1);
 x=zeros(n,1);
 summation=0;
