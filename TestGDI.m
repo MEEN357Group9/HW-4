@@ -24,4 +24,5 @@ for i=n:-1:1
     end
 end
 %code ends here.
-disp(x);
+X=table(x,'Rownames',{'X1' 'X2' 'X3'});
+disp(X);
