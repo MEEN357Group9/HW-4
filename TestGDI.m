@@ -12,4 +12,4 @@ b=[0;1;0];
 X=table(x,'Rownames',{'X1' 'X2' 'X3'});
 disp(X);
 
-%this is a test
+
