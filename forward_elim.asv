@@ -36,10 +36,10 @@ for i = 1:n % For all the i's
     if i == 1 % checks for special case for j = 0 which is not good for matrices
     else
         for j = 1:i-1 
-            summation = summation + L(i,j)*y(j); % adds to the summation for the later part of elimination
+            summation = summation + L(i,j)*y(j); % add
         end
     end
-    y(i) = (b(i)- summation)/L(i,i); % sets the value in y matrix
+    y(i) = (b(i)- summation)/L(i,i);
 end
 
 
