@@ -4,7 +4,7 @@ clear ALL
 close ALL
 clc
 A=[2,-3,1;5,1,6;4,3,-5];
-b=[0;1;0];
+b=[1;0;0];
 
 %code starts here
 [x,L,U] = solve_LU( A,b );
