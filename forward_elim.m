@@ -27,7 +27,7 @@ if A(1) ~= A(2) % uh oh not the same
 elseif B(1) ~= n || B(2) ~= 1 % checks to see if b is column vector
     error('b must be a column vector compatible with L.');
 end
-y = zeros(n); % starts the matrix so no slow computing
+y = zeros(n,1); % starts the matrix so no slow computing
 
 for i = 1:n % For all the i's
     summation = 0; % starts summation
