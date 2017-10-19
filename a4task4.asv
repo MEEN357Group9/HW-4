@@ -1,3 +1,5 @@
+clear ALL; clc
+
 A = [2, -3, 1; 5, 1, 6; 4, 3, -5];
 b = [1, 0, 0]'; %solves for the first column of the invers matrix
 
@@ -14,5 +16,8 @@ for i = 2:3
     A_inv(:,i) = x;
 end
 
-A*A_inv
+A_Inverse=A_inv*A;
+disp(BAC)
+
+
 

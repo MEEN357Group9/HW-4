@@ -16,7 +16,8 @@ for i = 2:3
     A_inv(:,i) = x;
 end
 
-A_inv*A
+A_Inverse=fix(A_inv*A);
+disp(A_Inverse)
 
 
 
