@@ -1,9 +1,9 @@
 clc;
 clear;
 close;
-xdata=1:1:10;
-ydata=1:1:10;
-x=5;
+xdata=1:1:5;
+ydata=1:2:10;
+x=2.1;
 %code starts here.
 LX=length(xdata);
 LY=length(ydata);
@@ -14,15 +14,21 @@ if LX~=LY
 end
 addition=0;
 for j=1:n
-    summation = 0;
+    summation = 1;
     for i=1:n
         if i~=j
-            y(i)=((x-xdata(i))/(xdata(j)-xdata(i)))*ydata(j);
-%             summation=summation+y(i);
-%         else
-%         end
-%     end
-%     addition=addition+summation;
-% end
-% addition 
+            y(i)=((x-xdata(i))/(xdata(j)-xdata(i)));
+            summation=summation*y(i);
+            test0(i,j)=y(i);
+            test1(i,j)=summation;
+            
+        else
+        end
+    end
+    test2(i,j)=summation;
+    addition=(addition+summation)*ydata(j);
+    y=addition;
+    test3(i,j)=addition;
+end
+addition 
             
