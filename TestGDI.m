@@ -1,8 +1,8 @@
 %Preparing to sub into backward elim
 %I am showing how this works 
-clear ALL
-close ALL
-clc
+% clear ALL
+% close ALL
+% clc
 A=[2,-3,1;5,1,6;4,3,-5];
 b=[1;0;0];
 
