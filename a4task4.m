@@ -16,9 +16,13 @@ for i = 2:3
     A_inv(:,i) = x;
 end
 
+<<<<<<< HEAD
 A_inv*A
 
 x1
 L
 U
+=======
+A*A_inv
+>>>>>>> eb494920796ab907fee47e2f189924287d1f8d85
 
