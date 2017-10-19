@@ -14,5 +14,5 @@ for i = 2:3
     A_inv(:,i) = x;
 end
 AA_inv=AA^-1;
-AA_inv*AA
-A_inv*A
+AA*AA_inv
+A*A_in

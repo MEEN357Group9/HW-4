@@ -32,7 +32,7 @@ for i=n:-1:1
         TermsU(i)=(U(i,j)*x(j));
         summation=summation+TermsU(i);
     end
-    x(i)=(y(i)-sum(U(i,j)*x(j)))/U(i,i);
+    x(i)=(y(i)-summation)/U(i,i);
     
 end
 

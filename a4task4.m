@@ -15,4 +15,4 @@ for i = 2:3
 end
 
 A*A_inv
-disp(A_inv)
+

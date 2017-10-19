@@ -23,7 +23,7 @@ for k = 1:n
         summation2 = 0;
         for m = 1:k-1
             TermU(m) = L(k,m)*U(m,j);
-            summation = summation + TermU(m);
+            summation2 = summation2 + TermU(m);
         end
         U(k,j) = (A(k,j) - summation2)/L(k,k);
     end
