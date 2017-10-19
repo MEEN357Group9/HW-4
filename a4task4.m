@@ -1,10 +1,12 @@
+clear all; clc
+
 A = [2, -3, 1; 5, 1, 6; 4, 3, -5];
 b = [1, 0, 0]'; %solves for the first column of the invers matrix
 
 [x1, L, U] = solve_LU(A,b);
 
 A_inv = zeros(size(A));
-A_inv(:,1) = x1;
+A_inv(:,1) = x1; %creates the first column of the inverse matrix
 I = eye(size(A));
 
 
@@ -14,5 +16,9 @@ for i = 2:3
     A_inv(:,i) = x;
 end
 
-A*A_inv
-disp(A_inv)
+A_inv*A
+
+x1
+L
+U
+
