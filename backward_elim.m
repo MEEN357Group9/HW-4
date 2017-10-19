@@ -1,10 +1,10 @@
 function [ x ] = backward_elim( U,y )
-%Backwards substitution
+%Backwards Elimination
 %The inputs of this function are:
-%   U-The U matrix inported from the forward elimination function.
+%   U-The U matrix inported from the Crout function.
 %   y-The y matrix is imported from the forward elimination function.
 %Outputs
-%   x-The x output is the value for the x values from the origional
+%   x-The x output is the value for the x values from the original
 %   equations
 
 %Checks the size of the matrixs
