@@ -1,9 +1,11 @@
+clear ALL; clc
+
 A = [2, -3, 1; 5, 1, 6; 4, 3, -5];
 b = [1, 0, 0]'; %solves for the first column of the invers matrix
 
 [x1, L, U] = solve_LU(A,b);
 
-A_inv = zeros(size(A));
+A_inv = zeros(size(A)); %creates a mat
 A_inv(:,1) = x1;
 I = eye(size(A));
 
@@ -14,4 +16,6 @@ for i = 2:3
     A_inv(:,i) = x;
 end
 
-A_inv*A
+A_Inverse=fix(A_inv*A);
+disp(A_Inverse)
+

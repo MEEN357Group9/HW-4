@@ -26,8 +26,9 @@ end
 %Preforming the backwards substitution. 
 n=n(1);
 x=zeros(n,1);
-summation=0;
+
 for i=n:-1:1
+    summation=0;
     for j=i+1:n
         TermsU(i)=(U(i,j)*x(j));
         summation=summation+TermsU(i);
