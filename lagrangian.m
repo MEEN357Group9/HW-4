@@ -22,7 +22,7 @@ for j=1:n
         end
     end
     %test2(i,j)=summation;
-    addition=(addition+summation)*ydata(j);
+    addition=addition+summation*ydata(j);
     %test3(i,j)=addition;
 end
 y=addition; 
